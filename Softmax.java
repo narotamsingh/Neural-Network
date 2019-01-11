@@ -1,7 +1,7 @@
 public class Softmax {
 	public static void main(String[] args) {
 
-		int[] data={5,6,7,8,9};
+		int[] data=randomInt(100);
 		double[] list = softmax(data);
 
 		for(int i=0; i<data.length;i++)
@@ -19,6 +19,14 @@ public class Softmax {
 
         	for(int i=0; i<data.length;i++)
                         result[i] = Math.exp(data[i])/sum;
+		return result;
+     	} 
+	
+	public static int[] randomInt(int n) { 
+                //takes number of elements as input and returns array of random int
+		int[] result = new int[n];
+        	for(int i=0; i<n; i++)
+                        result[i] = ThreadLocalRandom.current().nextInt(1, 9);
 		return result;
      	} 
 }
