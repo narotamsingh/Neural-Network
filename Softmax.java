@@ -2,8 +2,12 @@ public class Softmax {
 	public static void main(String[] args) {
 
 		int[] data=randomInt(100);
+		// Timeit with: long startTime = System.nanoTime();
 		double[] list = softmax(data);
-
+		// Timeit with: long endTime = System.nanoTime();
+		// Timeit with: long duration = (endTime - startTime);
+		// Timeit with: System.out.println("Duration:"+duration+" Nanoseconds");
+		
 		for(int i=0; i<data.length;i++)
                         System.out.print(list[i] + " ");
 		System.out.println(" ");
