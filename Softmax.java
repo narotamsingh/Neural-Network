@@ -29,7 +29,7 @@ public class Softmax {
 		return result;
      	} 
 	
-	public static void timeIt() { 
+	public static void timeIt(int data[]) { 
 		//adopted from https://stackoverflow.com/questions/180158/how-do-i-time-a-methods-execution-in-java
 		long startTime = System.nanoTime();
 		double[] list = softmax(data);
