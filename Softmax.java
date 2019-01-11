@@ -7,7 +7,7 @@ public class Softmax {
 		// Timeit with: long endTime = System.nanoTime();
 		// Timeit with: long duration = (endTime - startTime);
 		// Timeit with: System.out.println("Duration:"+duration+" Nanoseconds");
-		
+		// Timeit: adopted from https://stackoverflow.com/questions/180158/how-do-i-time-a-methods-execution-in-java
 		for(int i=0; i<data.length;i++)
                         System.out.print(list[i] + " ");
 		System.out.println(" ");
